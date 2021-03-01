@@ -1,0 +1,100 @@
+
+
+
+header{
+    padding: 14px 40px;
+    /* 上下　左右 */
+    background-color: rgb(6,39,66);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left img{
+    /*.header-left img
+    　　　　　　　　↑のスペースは「その中の」という意味　  */
+    height: 36px;
+
+}
+
+.nav{
+    display: flex;
+}
+
+.nav li a{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 20px ;
+    text-decoration: none;
+    /* なしになる */
+}
+
+.welcome{
+    background-image: url(../img/background.jpg);
+    /* cssが入っているフォルダから出るために
+        「../」を入れる
+        そこからimgフォルダの中に入って画像を指定している */
+    background-size: cover;
+    /* 背景画像が設定されているものの大きさを覆う
+    content とかもある */
+    background-repeat: no-repeat;
+    /* デフォルトはリピートすることになっている */
+    height: 100vh;
+    /* view height  横幅はvw*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+h1{
+    font-size: 80px;
+}
+
+.guideline{
+    font-size: 40px;
+    text-align: center;
+}
+
+h2{
+    padding: 40px;
+    font-size: 40px;
+    font-weight:bold;
+    color:rgb(128,128,128) ;
+    text-align: center;
+}
+
+.container1, .container2{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    width: 40%;
+}
+
+img{
+    width: 30%;
+    height: 100%;
+    margin: 0 5%;
+}
+
+
+
+footer{
+    background-color: rgb(6,39,66);
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 0;
+    margin-top: 100px;
+    text-align: center;
+    /* ↕文字を中央にする */
+    /*　他にも…
+   　 margin: 0 auto;
+   　 auto=左右均等に　そのものの大きさが決まっている時 */
+   /* flexを使わないのは、記載が少なく書けるなら */
+}

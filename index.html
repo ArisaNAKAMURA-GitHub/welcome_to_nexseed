@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/CSS/reset.css">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <!-- フォルダの立ち位置を見て「/」を入れる 「その中に入る」という意味合い
+    上書きされていくので呼び出す順番に注意 -->
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <!-- そのまま画像を貼ってもいい -->
+            <img src="assets/img/logo-white.png" alt="logo">
+        </div>
+        <div class="header-right">
+            <!-- div.header-rightでclassつきのdivができる -->
+            <ul class="nav">
+                <li><a href="#programming">Programming</a></li>
+                <li><a href="#english">English</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="welcome">
+            <!-- セクションが分かれるから
+                セクションタグを使っただけ
+                別にdivタグでもいい -->
+            <h1>Welcome to NexSeed</h1>
+            <ul class="guideline">
+                <li>Be Athlete</li>
+                <li>Go World</li>
+                <li>Enjoy Everything</li>
+            </ul>
+
+        </section>
+
+        <section id="programming">
+            <!-- ページ内リンクはidを使う -->
+            <h2>Programming</h2>
+            <div class="container1">
+                <p class="loem">Lorem ipsum dolor sit amet, consecteturadipisicing elit. Libero optio veniam in est dolorum consequatur? Animi non asperiores et illum in, modi molestiae! Beatae asperiores placeat aspernatur sequi culpa magni?</p>
+                <img src="assets/img/programming.jpg" alt="PC">
+            </div>    
+        </section>
+
+        <section id="english">
+            <h2>English</h2>
+            <div class="container2">
+                <img src="assets/img/programming.jpg" alt="PC">
+                <p class="loem">Lorem ipsum dolor sit amet, consecteturadipisicing elit. Libero optio veniam in est dolorum consequatur? Animi non asperiores et illum in, modi molestiae! Beatae asperiores placeat aspernatur sequi culpa magni?</p>
+                
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        Copyright © SeedKun Inc.
+    </footer>
+</body>
+</html>
